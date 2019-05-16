@@ -1,0 +1,103 @@
+html {
+  font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,-apple-system,blinkmacsystemfont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: linear-gradient(rgba(110, 103, 103, 0.73),rgba(110, 103, 103, 0.73)),url(/public/media/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #a02f32;
+  min-height: 100%;
+}
+
+#header {
+  background: white;
+  border-top: 3px solid #bf112b;
+  border-bottom: 1px solid #eee;
+  height: 70px;
+}
+
+#librarylink {
+  position: absolute;
+  width: 235px;
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#librarylink a {
+  color: black;
+}
+
+#carletonlogo{
+  padding-top: 15px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+#name {
+  line-height: 1;
+  height: 40px;
+  float: left;
+  padding-top: 19px;
+}
+
+#name-first {
+  margin: 0;
+  line-height: 1;
+  font-size: 0.6875rem;
+  font-weight: 400;
+}
+
+#name-second {
+  margin: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+#header div.nav-widget {
+  float: right;
+  height: 70px;
+  margin-right: 10px;
+}
+
+#header div.nav-widget a {
+  padding-top: 23px;
+  padding-bottom: 22.5px;
+  padding-left: 7px;
+  display: block;
+}
+
+#page-wrap {
+  max-width: 50%;
+  margin: 10px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+.mc1	{ border:1px solid #000; background-color:#fff; padding:0.5em 1em; width:17em; height: 18em; float:left; cursor:default; display:block; }
+
+.pin	{ border:1px solid #E4E4E4; background-color:#E4E4E4; padding:0.5em 1em; width: 17em; height: 18em; float:left; display:block; }
+
+.well { border:0 background-color:#fff; padding:0; width:1em; float:left; display:block; }
+
+
+
+.button { margin: 0 auto; padding:0 0 20 0; border: 0; }
+
+.button2 { width:100px; margin: 0 auto; padding:20 0 0 0; }
+
+
+
+
