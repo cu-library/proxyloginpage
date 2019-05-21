@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="/public/css/normalize.css">
     <link type="text/css" rel="stylesheet" href="https://cloud.typography.com/6307052/6144772/css/fonts.css" media="all">
     <link rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/js/validate.min.js" type="text/javascript"></script>
   </head>
   <body>
     <header id="header" role="banner">
@@ -37,40 +36,38 @@
       </div>
     </header>
     <div id="page-wrap">
-      <div id="loginwidget">
+      <div id="login-widget">
         <h1>Off-Campus Login to Access Library E-Resources</h1>
-        <div id="error"></div>
-        <div id="mc1-wrapper">
-        <h2>Current Carleton students, faculty, staff</h2>
-        <form id="mc1" action="/login" method="post" name="mc1">
-          <input type="hidden" name="url" value="^U" />
-          <label for="mc1user">
-            <a href="http://www1.carleton.ca/mycarletonone/" target="_blank" title="MyCarletonOne Username details">MyCarletonOne</a>   Username:
-          </label>
-          <input type="text" name="user" id="mc1user" size="40" tabindex="1" autofocus="autofocus"/>
-          <label for="mc1pass">
-            <a href="http://www1.carleton.ca/mycarletonone/" title="MyCarletonOne Username details" target="_blank">MyCarletonOne</a>   Password:
-          </label>
-          <input type="password" name="pass" id="mc1pass" size="40" tabindex="2"/>
-          <input type="submit" value="Login" />
-        </form>
-        <a href="/public/proxy_help-mc1.htm" title="Help with login">Help</a>
+        <div class="form-wrapper">
+          <h2>Current Carleton students, faculty, staff</h2>
+          <form id="mc1" action="/login" method="post" name="mc1">
+            <input type="hidden" name="url" value="^U" />
+            <label for="mc1user">
+              <a href="http://www1.carleton.ca/mycarletonone/" target="_blank" title="MyCarletonOne Username details">MyCarletonOne</a>   Username:
+            </label>
+            <input type="text" name="user" id="mc1user" size="40" tabindex="1" autofocus required/>
+            <label for="mc1pass">
+              <a href="http://www1.carleton.ca/mycarletonone/" title="MyCarletonOne Username details" target="_blank">MyCarletonOne</a>   Password:
+            </label>
+            <input type="password" name="pass" id="mc1pass" size="40" tabindex="2" required/>
+            <input type="submit" value="Login" tabindex="3" />
+          </form>
         </div>
-        <div id="pin-wrapper">
-        <h2>Other Library Users</h2>
-        <form id="pass" action="/login" method="post" name="pass">
-          <input type="hidden" name="url" value="^U" />
-          <label for="pinuser">Barcode:</label>
-          <input type="text" name="user" id="pinuser" size="40" tabindex="3"/>
-          <label for="pinpass">PIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type="password" name="pass" id="pinpass" size="40" tabindex="4"/>
-          <input type="submit" value="Login" />
-        </form>
-        <a href="/public/proxy_help-mc1.htm" title="Help with login">Help</a>
+        <div class="form-wrapper">
+          <h2>Other Library Users</h2>
+          <form id="pass" action="/login" method="post" name="pass">
+            <input type="hidden" name="url" value="^U" />
+            <label for="pinuser">Barcode:</label>
+            <input type="text" name="user" id="pinuser" size="40" tabindex="4" required/>
+            <label for="pinpass">PIN:</label>
+            <input type="password" name="pass" id="pinpass" size="40" tabindex="5" required/>
+            <input type="submit" value="Login" tabindex="6" />
+          </form>
         </div>
-        <p class="note">The Library's licensed electronic resources, such as subscription-based journals, e-books and databases, are for the   exclusive use of Carleton University students, faculty and staff.  The terms and conditions of the license agreements which include   some <a href="https://www.library.carleton.ca/about/policies/electronic-resources-policy" title="Key Features for licensed content">  key features</a></p>
       </div>
+      <p class="note">The Library's licensed electronic resources, such as subscription-based journals, e-books and databases, are for the exclusive use of Carleton University students, faculty and staff. </p>
+      <p>The terms and conditions of the license agreements which include some <a href="https://www.library.carleton.ca/about/policies/electronic-resources-policy" title="Key Features for licensed content"> key features</a></p>
+      <p><a href="/public/proxy_help-mc1.htm" title="Help with login">Click here for help.</a></p>
     </div>
-    <script src="/public/js/main.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,16 +1,5 @@
 html {
   font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,-apple-system,blinkmacsystemfont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  background-image: linear-gradient(rgba(110, 103, 103, 0.73),rgba(110, 103, 103, 0.73)),url(/public/media/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #a02f32;
-  min-height: 100%;
 }
 
 #header {
@@ -75,29 +64,39 @@ body {
 }
 
 #page-wrap {
-  max-width: 50%;
-  margin: 10px auto;
-  background: white;
-  padding: 10px;
-  border-radius: 3px;
+  max-width: 768px;
+  margin: 0 auto;
+  border-top: 10px solid #bdbdbd;
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
-.mc1	{ border:1px solid #000; background-color:#fff; padding:0.5em 1em; width:17em; height: 18em; float:left; cursor:default; display:block; }
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
-.pin	{ border:1px solid #E4E4E4; background-color:#E4E4E4; padding:0.5em 1em; width: 17em; height: 18em; float:left; display:block; }
+label {
+  display: block;
+  margin: 10px 0px 3px 0px;
+}
 
-.well { border:0 background-color:#fff; padding:0; width:1em; float:left; display:block; }
+input {
+  display: block;
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.form-wrapper {
+  margin: 30px 0px;
+}
 
-
-.button { margin: 0 auto; padding:0 0 20 0; border: 0; }
-
-.button2 { width:100px; margin: 0 auto; padding:20 0 0 0; }
-
-
-
-
+a {
+  color: #bf112b;
+}
