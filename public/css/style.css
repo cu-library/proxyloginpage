@@ -134,11 +134,24 @@ input[type=submit]:hover {
 }
 
 .aside {
-  padding: 0px 10px;
+  padding: 20px 10px;
   float: right;
   max-width: 270px;
 }
 
 p {
   margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 819px) {
+  #page-wrap {
+    max-width: 768px;
+    padding: 0 10px;
+    border-top: none;
+  }
+
+  .aside {
+    float: left;
+    max-width: none;
+  }
 }
