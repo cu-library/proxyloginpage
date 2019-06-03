@@ -2,80 +2,24 @@ html {
   font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,-apple-system,blinkmacsystemfont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
+h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 10px 0px 20px 0px;
+}
+
 a {
   color: #bf112b;
 }
 
-#header {
-  background: white;
-  border-top: 3px solid #bf112b;
-  border-bottom: 1px solid #eee;
-  height: 70px;
-}
-
-#librarylink {
-  position: absolute;
-  width: 235px;
-  height: 70px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-#librarylink a {
-  color: black;
-}
-
-#carletonlogo{
-  padding-top: 15px;
-  height: 40px;
-  float: left;
-  margin-right: 10px;
-}
-
-#name {
-  line-height: 1;
-  height: 40px;
-  float: left;
-  padding-top: 19px;
-}
-
-#name-first {
-  margin: 0;
-  line-height: 1;
-  font-size: 0.6875rem;
-  font-weight: 400;
-}
-
-#name-second {
-  margin: 0;
-  line-height: 1.2;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
-#header div.nav-widget {
-  float: right;
-  height: 70px;
-  margin-right: 10px;
-}
-
-#header div.nav-widget a {
-  padding-top: 23px;
-  padding-bottom: 22.5px;
-  padding-left: 7px;
-  display: block;
+p {
+  margin: 0px 0px 20px 0px;
+  line-height: 1.6;
 }
 
 #page-wrap {
   max-width: 768px;
   margin: 0 auto;
-  border-top: 10px solid #bdbdbd;
-}
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: 400;
 }
 
 .form-wrapper {
@@ -137,10 +81,6 @@ input[type=submit]:hover {
   padding: 20px 10px;
   float: right;
   max-width: 270px;
-}
-
-p {
-  margin: 0px 0px 20px 0px;
 }
 
 @media (max-width: 819px) {
